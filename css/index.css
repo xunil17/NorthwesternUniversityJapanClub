@@ -1,0 +1,95 @@
+#left-background, #right-background {
+	position: fixed;
+	top: 50%;
+}
+
+#left-background, #right-background {
+	display: none;
+}
+
+@media (min-width: 1050px) {
+	#left-background, #right-background {
+		display: inherit;
+		height: 500px;
+		margin-top: -250px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#left-background, #right-background {
+		display: inherit;
+		height: 600px;
+		margin-top: -300px;
+	}
+}
+
+#left-background {
+	padding-left: 10px;
+}
+
+#right-background {
+	right: 0px;
+	padding-right: 10px;
+}
+
+#call-to-action {
+	text-align: center;
+	color: rgb(136, 136, 136);
+}
+
+.social-links {
+	text-align: center;
+	font-size: 2.0em;
+}
+
+.social-links a {
+	color: rgb(136, 136, 136);
+}
+
+.social-links a:hover {
+	color: rgb(68, 68, 68);
+}
+
+.social-links i {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#nu {
+	margin: 0px;
+}
+
+#nu span {
+	color: #800080;
+	font-weight: bold;
+}
+
+#japan-club {
+	margin: 0px;
+	font-size: 8.0em;
+}
+
+#japan-club #japan {
+	color: #b81e0d;
+	font-weight: bold;
+}
+
+#flyer {
+	width: 100%;
+}
+
+.exec img {
+	float: left;
+	width: 120px;
+	height: 120px;
+	margin: 20px;
+}
+
+.exec p {
+	padding-top: 20px;
+	font-size: 1.5em;
+}
+
+footer {
+	padding: 2.0em;
+}
