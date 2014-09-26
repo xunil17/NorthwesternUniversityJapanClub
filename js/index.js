@@ -21,13 +21,15 @@ exec.on('value', function (snapshot) {
 	var i = 0;
 	while (true) {
 		var datum = data[i];
-		if (!datum) {
+		if (!datum) { 
 			break;
 		}
+		var emailto = "mailto:" + datum.email;
 		$(
 			'<div class="col-xs-12 col-md-6 exec">' +
-				'<h3>' + datum.name + ' - ' + datum.position + '</h1>' +
-				'<img src="doesnotexist.png"/>' +
+				'<h3>' + datum.name + ' - ' + datum.position + '</h3>' +
+				'<h4>' + datum.email + '</h4>' +
+				'<img src="' + datum.picture + '"/>' +
 				'<p>' + datum.bio + '</p>' +
 			'</div>'
 		).appendTo('#exec-container');
