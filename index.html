@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css"/>
   <link rel="stylesheet" href="./css/font-awesome.min.css"/>
   <link rel="stylesheet" href="./css/index.css"/>
+  <link href="./favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
   <img id="left-background" src="./img/swirl-left.png"/>
@@ -24,12 +25,21 @@
       </div>
       <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
     </div>
+    <div class="row">
+      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+        <table id="buzzwords">
+          <tr></tr>
+        </table>
+      </div>
+      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+    </div>
     <div style="height: 2.0em;"></div>
     <div class="row">
       <div class="col-sm-0 col-md-1 col-lg-2"></div>
       <div class="col-sm-12 col-md-10 col-lg-8">
-        <h1>Upcoming Events&hellip;</h1>
-        <img id="flyer" src="./img/bunkasai.jpg"/>
+        <h1><span class="fb-value" data-key="banner-title"></span></h1>
+        <span id="banner-container"></span>
       </div>
       <div class="col-sm-0 col-md-1 col-lg-2"></div>
     </div>
@@ -37,16 +47,25 @@
     <div class="row">
       <div class="col-sm-0 col-md-1 col-lg-2"></div>
       <div class="col-sm-12 col-md-10 col-lg-8">
-        <h1 class="text-center">Meet the Executive Board!</h1>
+        <h1 class="text-center"><span class="fb-value" data-key="exec-board"></span></h1>
         <div class="row" id="exec-container"></div>
       </div>
       <div class="col-sm-0 col-md-1 col-lg-2"></div>
     </div>
   </div>
+  <h1 class="text-center"><span class="fb-value" data-key="participate"></span></h1>
+  <div class="row">
+    <div class="col-xs-1 col-md-2 col-lg-3"></div>
+    <div class="col-xs-10 col-md-8 col-lg-6">
+      <h2>1. Come to events and general meetings.</h2>
+      <h2>2. Look out for our upcoming Junior Exec application.</h2>
+    </div>
+    <div class="col-sm-1 col-md-2 col-lg-3"></div>
+  </div>
   <footer>
     <div class="social-links">
       <a href="https://www.facebook.com/NUJapanClub"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="glyphicon glyphicon-envelope"></i></a>
+      <a href="mailto:nujapanclub@gmail.com"><i class="glyphicon glyphicon-envelope"></i></a>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
