@@ -22,7 +22,10 @@ exec.on('value', function (snapshot) {
 	var data = snapshot.val();
 	var i = 0;
 	while (true) {
-		var datum = data[i];
+		var datum;
+		var $row = $('<div class="row"></div>').appendTo('#exec-container');
+
+		datum = data[i];
 		if (!datum) { 
 			break;
 		}
@@ -33,7 +36,21 @@ exec.on('value', function (snapshot) {
 				'<img src="' + datum.picture + '"/>' +
 				'<p>' + datum.bio + '</p>' +
 			'</div>'
-		).appendTo('#exec-container');
+		).appendTo($row);
+		i++;
+
+		datum = data[i];
+		if (!datum) { 
+			break;
+		}
+		$(
+			'<div class="col-xs-12 col-md-6 exec">' +
+				'<h3>' + datum.name + ' - ' + datum.position + '</h3>' +
+				'<h4>' + datum.email + '</h4>' +
+				'<img src="' + datum.picture + '"/>' +
+				'<p>' + datum.bio + '</p>' +
+			'</div>'
+		).appendTo($row);
 		i++;
 	}
 });
